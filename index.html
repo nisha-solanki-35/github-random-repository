@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Repository Finder</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>GitHub Repository Finder</h2>
+    <select id="language">
+      <option value="">Select a language</option>
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="c++">C++</option>
+      <option value="ruby">Ruby</option>
+      <option value="go">Go</option>
+    </select>
+    
+    <div id="status" class="status">Please select a language</div>
+    <div id="repository" class="repository hidden">
+      <p id="repoName" class="repoName"></p>
+      <p id="repoDescription" class="repoDescription"></p>
+      <div class="repo-details">
+        <p><span id="languagetext"></span></p>
+        <p class="repo-details"><img src="./images/star.png"><img><span id="stars"></span></p>
+        <p class="repo-details"><img src="./images/fork.png"><img><span id="forks"></span></p>
+        <p class="repo-details"><img src="./images/info.png"><img> <span id="issues"></span></p>
+        </div>
+    </div>
+    <button id="retryBtn" class="retryBtn hidden">Click to retry</button>
+    <button id="refreshBtn" class="refreshBtn hidden">Refresh</button>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>
